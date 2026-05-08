@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LUCY Retail Growth — Maureen Essah</title>
+  <title>LUCY Retail Growth - Essah Essah</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%232046ff'/><text x='16' y='23' font-family='Georgia,serif' font-size='20' font-weight='bold' text-anchor='middle' fill='white'>M</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -248,7 +248,7 @@
     h1 {
       margin: 22px 0 16px;
       font-family: var(--display);
-      font-size: clamp(52px, 8vw, 112px);
+      font-size: clamp(22px, 8vw, 82px);
       line-height: 0.88;
       letter-spacing: -0.025em;
       max-width: none;
@@ -265,6 +265,7 @@
       overflow: visible;
       position: relative;
       z-index: -1;
+      margin-right: -2px;
     }
 
     .highlight.blue-chip {
@@ -279,7 +280,7 @@
     .hero-text {
       max-width: 680px;
       color: #333a4e;
-      font-size: clamp(17px, 1.6vw, 22px);
+      font-size: clamp(13px, 1.6vw, 18px);
       line-height: 1.42;
       margin: 0;
       font-weight: 600;
@@ -335,7 +336,7 @@
     /* ── HERO VISUAL / PRODUCT FLOATS ── */
     .hero-visual {
       position: relative;
-      min-height: 760px;
+      min-height: 560px;
       border-radius: var(--radius);
       overflow: hidden;
       border: 1px solid rgba(255,255,255,0.74);
@@ -364,7 +365,7 @@
       position: relative;
       display: grid;
       place-items: center;
-      min-height: 450px;
+      min-height: 300px;
       perspective: 1100px;
       overflow: hidden;
     }
@@ -381,7 +382,7 @@
       border: 1px solid rgba(16,18,31,0.26);
       box-shadow: 0 18px 42px rgba(16,18,31,0.2);
       overflow: hidden;
-      opacity: 0;
+      opacity: 1;
     }
 
     .product-float img {
@@ -397,60 +398,84 @@
     /* Each circle enters from one edge, floats through the panel, exits the other side */
 
     @keyframes drift1 {
-      0%   { transform: translate(-340px, -230px) scale(0.72) rotate(-4deg); opacity: 0; }
-      9%   { opacity: 1; }
-      50%  { transform: translate(-50px, -140px) scale(1.06) rotate(-1deg); opacity: 1; }
-      91%  { opacity: 1; }
-      100% { transform: translate(260px, -50px) scale(0.78) rotate(3deg); opacity: 0; }
+      0%   { transform: translate(-340px, -230px) scale(0.72) rotate(-4deg); }
+      50%  { transform: translate(-50px, -140px) scale(1.06) rotate(-1deg); }
+      100% { transform: translate(260px, -50px) scale(0.78) rotate(3deg); }
     }
     @keyframes drift2 {
-      0%   { transform: translate(320px, -280px) scale(0.7) rotate(6deg); opacity: 0; }
-      9%   { opacity: 1; }
-      50%  { transform: translate(10px, -175px) scale(1.04) rotate(4deg); opacity: 1; }
-      91%  { opacity: 1; }
-      100% { transform: translate(-290px, -60px) scale(0.76) rotate(1deg); opacity: 0; }
+      0%   { transform: translate(320px, -280px) scale(0.7) rotate(6deg); }
+      50%  { transform: translate(10px, -175px) scale(1.04) rotate(4deg); }
+      100% { transform: translate(-290px, -60px) scale(0.76) rotate(1deg); }
     }
     @keyframes drift3 {
-      0%   { transform: translate(360px, -110px) scale(0.68) rotate(8deg); opacity: 0; }
-      9%   { opacity: 1; }
-      50%  { transform: translate(195px, -55px) scale(1.03) rotate(5deg); opacity: 1; }
-      91%  { opacity: 1; }
-      100% { transform: translate(-70px, 130px) scale(0.8) rotate(2deg); opacity: 0; }
+      0%   { transform: translate(360px, -110px) scale(0.68) rotate(8deg); }
+      50%  { transform: translate(195px, -55px) scale(1.03) rotate(5deg); }
+      100% { transform: translate(-70px, 130px) scale(0.8) rotate(2deg); }
     }
     @keyframes drift4 {
-      0%   { transform: translate(-370px, 30px) scale(0.74) rotate(3deg); opacity: 0; }
-      9%   { opacity: 1; }
-      50%  { transform: translate(-190px, -15px) scale(1.05) rotate(5deg); opacity: 1; }
-      91%  { opacity: 1; }
-      100% { transform: translate(80px, -190px) scale(0.77) rotate(-2deg); opacity: 0; }
+      0%   { transform: translate(-370px, 30px) scale(0.74) rotate(3deg); }
+      50%  { transform: translate(-190px, -15px) scale(1.05) rotate(5deg); }
+      100% { transform: translate(80px, -190px) scale(0.77) rotate(-2deg); }
     }
     @keyframes drift5 {
-      0%   { transform: translate(370px, 10px) scale(0.7) rotate(-5deg); opacity: 0; }
-      9%   { opacity: 1; }
-      50%  { transform: translate(205px, 55px) scale(1.04) rotate(-3deg); opacity: 1; }
-      91%  { opacity: 1; }
-      100% { transform: translate(-100px, 195px) scale(0.79) rotate(1deg); opacity: 0; }
+      0%   { transform: translate(370px, 10px) scale(0.7) rotate(-5deg); }
+      50%  { transform: translate(205px, 55px) scale(1.04) rotate(-3deg); }
+      100% { transform: translate(-100px, 195px) scale(0.79) rotate(1deg); }
     }
     @keyframes drift6 {
-      0%   { transform: translate(-350px, 260px) scale(0.72) rotate(-3deg); opacity: 0; }
-      9%   { opacity: 1; }
-      50%  { transform: translate(-150px, 150px) scale(1.03) rotate(-2deg); opacity: 1; }
-      91%  { opacity: 1; }
-      100% { transform: translate(130px, -30px) scale(0.78) rotate(2deg); opacity: 0; }
+      0%   { transform: translate(-350px, 260px) scale(0.72) rotate(-3deg); }
+      50%  { transform: translate(-150px, 150px) scale(1.03) rotate(-2deg); }
+      100% { transform: translate(130px, -30px) scale(0.78) rotate(2deg); }
     }
     @keyframes drift7 {
-      0%   { transform: translate(50px, 310px) scale(0.7) rotate(5deg); opacity: 0; }
-      9%   { opacity: 1; }
-      50%  { transform: translate(-15px, 195px) scale(1.02) rotate(4deg); opacity: 1; }
-      91%  { opacity: 1; }
-      100% { transform: translate(-230px, 65px) scale(0.77) rotate(1deg); opacity: 0; }
+      0%   { transform: translate(50px, 310px) scale(0.7) rotate(5deg); }
+      50%  { transform: translate(-15px, 195px) scale(1.02) rotate(4deg); }
+      100% { transform: translate(-230px, 65px) scale(0.77) rotate(1deg); }
     }
     @keyframes drift8 {
-      0%   { transform: translate(310px, 265px) scale(0.7) rotate(-7deg); opacity: 0; }
-      9%   { opacity: 1; }
-      50%  { transform: translate(170px, 150px) scale(1.05) rotate(-5deg); opacity: 1; }
-      91%  { opacity: 1; }
-      100% { transform: translate(-90px, -55px) scale(0.8) rotate(-2deg); opacity: 0; }
+      0%   { transform: translate(310px, 265px) scale(0.7) rotate(-7deg); }
+      50%  { transform: translate(170px, 150px) scale(1.05) rotate(-5deg); }
+      100% { transform: translate(-90px, -55px) scale(0.8) rotate(-2deg); }
+    }
+    @keyframes drift9 {
+      0%   { transform: translate(-400px, -300px) scale(0.5) rotate(2deg); }
+      50%  { transform: translate(0px, -100px) scale(1.2) rotate(-2deg); }
+      100% { transform: translate(400px, 100px) scale(0.6) rotate(4deg); }
+    }
+    @keyframes drift10 {
+      0%   { transform: translate(380px, -320px) scale(0.55) rotate(-6deg); }
+      50%  { transform: translate(20px, -150px) scale(1.15) rotate(3deg); }
+      100% { transform: translate(-350px, 80px) scale(0.65) rotate(-3deg); }
+    }
+    @keyframes drift11 {
+      0%   { transform: translate(420px, -80px) scale(0.45) rotate(10deg); }
+      50%  { transform: translate(180px, 0px) scale(1.25) rotate(-4deg); }
+      100% { transform: translate(-300px, 180px) scale(0.55) rotate(6deg); }
+    }
+    @keyframes drift12 {
+      0%   { transform: translate(-420px, 50px) scale(0.6) rotate(-5deg); }
+      50%  { transform: translate(-200px, 0px) scale(1.18) rotate(6deg); }
+      100% { transform: translate(350px, -250px) scale(0.58) rotate(-4deg); }
+    }
+    @keyframes drift13 {
+      0%   { transform: translate(400px, 30px) scale(0.48) rotate(-8deg); }
+      50%  { transform: translate(220px, 80px) scale(1.22) rotate(5deg); }
+      100% { transform: translate(-320px, 220px) scale(0.52) rotate(-6deg); }
+    }
+    @keyframes drift14 {
+      0%   { transform: translate(-380px, 300px) scale(0.52) rotate(4deg); }
+      50%  { transform: translate(-120px, 180px) scale(1.16) rotate(-5deg); }
+      100% { transform: translate(280px, -120px) scale(0.62) rotate(3deg); }
+    }
+    @keyframes drift15 {
+      0%   { transform: translate(60px, 350px) scale(0.58) rotate(-8deg); }
+      50%  { transform: translate(30px, 220px) scale(1.14) rotate(6deg); }
+      100% { transform: translate(-280px, 100px) scale(0.56) rotate(-4deg); }
+    }
+    @keyframes drift16 {
+      0%   { transform: translate(350px, 290px) scale(0.5) rotate(-9deg); }
+      50%  { transform: translate(190px, 170px) scale(1.2) rotate(7deg); }
+      100% { transform: translate(-250px, -100px) scale(0.6) rotate(-5deg); }
     }
 
     .product-float.float-one   { animation: drift1 22s ease-in-out infinite 0s; }
@@ -461,6 +486,14 @@
     .product-float.float-six   { animation: drift6 23s ease-in-out infinite -14.8s; }
     .product-float.float-seven { animation: drift7 17s ease-in-out infinite -3.2s; }
     .product-float.float-eight { animation: drift8 20s ease-in-out infinite -16.5s; }
+    .product-float.float-nine  { animation: drift9 14s ease-in-out infinite -2s; }
+    .product-float.float-ten   { animation: drift10 13s ease-in-out infinite -5s; }
+    .product-float.float-eleven { animation: drift11 15s ease-in-out infinite -7s; }
+    .product-float.float-twelve { animation: drift12 12s ease-in-out infinite -9s; }
+    .product-float.float-thirteen { animation: drift13 16s ease-in-out infinite -12s; }
+    .product-float.float-fourteen { animation: drift14 11s ease-in-out infinite -1s; }
+    .product-float.float-fifteen { animation: drift15 14s ease-in-out infinite -4s; }
+    .product-float.float-sixteen { animation: drift16 13s ease-in-out infinite -6s; }
 
     /* ── HERO CARD ── */
     .hero-card {
@@ -539,7 +572,7 @@
     /* ── SECTIONS ── */
     section {
       padding: 82px clamp(22px, 3vw, 44px);
-      margin: 28px 0;
+      margin: 30px 0;
       border-radius: var(--radius);
       scroll-margin-top: 104px;
     }
@@ -551,7 +584,7 @@
     /* Word wall */
     main > section.word-wall { background: #04ef92; color: var(--lucy-ink); border: 2px solid var(--lucy-ink); }
     /* About / personal */
-    main > section#about { background: var(--lucy-ink); border: none; color: var(--white); }
+    main > section#about { background: var(--lucy-ink); border: none; color: var(--white); margin-top: 18px; }
     /* Dashboard */
     main > section#dashboard { background: #ffffff; border: 2px solid rgba(16,18,31,0.08); }
     /* Tests */
@@ -559,7 +592,7 @@
     /* Playbook */
     main > section#playbook { background: #f0e84c; border: 2px solid var(--lucy-ink); }
     /* Market */
-    main > section#market { background: #b991f4; border: 2px solid var(--lucy-ink); }
+    main > section#market { background: #b991f4; border: 2px solid var(--lucy-ink); margin-bottom: -28px; }
 
     /* Tests section needs white text */
     main > section#tests .section-head,
@@ -590,7 +623,12 @@
       font-size: clamp(31px, 4.5vw, 64px);
       line-height: 0.95;
       letter-spacing: -0.055em;
-      max-width: 760px;
+      max-width: 900px;
+    }
+
+    .section-head h2 em {
+      font-style: italic;
+      color: var(--lucy-green);
     }
 
     .section-head p {
@@ -670,7 +708,7 @@
     .about-body {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 36px;
+      gap: 10px;
       align-items: start;
       margin-top: 36px;
     }
@@ -686,7 +724,8 @@
     .about-statement p.lead {
       color: var(--white);
       font-weight: 650;
-      font-size: clamp(17px, 1.7vw, 22px);
+      font-size: clamp(13px, 1.7vw, 18px);
+      margin-bottom: 10px;
     }
 
     .about-proof {
@@ -1149,7 +1188,7 @@
     }
 
     .locator-map::before {
-      content: "US LOCATOR CLUSTERS — ESTIMATED FROM PUBLIC SCREENSHOT — NOT INTERNAL LUCY DATA";
+      content: "US LOCATOR CLUSTERS - ESTIMATED FROM PUBLIC SCREENSHOT - NOT INTERNAL LUCY DATA";
       position: absolute; top: 14px; left: 14px;
       color: rgba(16,18,31,0.32); font-size: 9px; font-weight: 900; letter-spacing: 0.1em;
     }
@@ -1414,12 +1453,12 @@
   <!-- ── TICKER ── -->
   <div class="ticker" aria-label="Application context ticker">
     <span>
-      Essah &nbsp;·&nbsp; Application for Retail Marketing and Analytics &nbsp;·&nbsp; LUCY Goods Inc. &nbsp;·&nbsp; May 2026 &nbsp;·&nbsp;
+      Essah &nbsp;·&nbsp; Retail Marketing and Analytics &nbsp;·&nbsp; LUCY Goods Inc. &nbsp;·&nbsp; 2026 &nbsp;·&nbsp;
       The U.S. nicotine pouch market is $5.4B and 96% of it is won on a shelf &nbsp;·&nbsp;
       Read velocity per reliable door, not per locator pin &nbsp;·&nbsp;
       Breakers has the clearest in-store explanation in the category &nbsp;·&nbsp;
       Own the door. Read velocity. Fix OOS before calling the result. &nbsp;·&nbsp;
-      Essah &nbsp;·&nbsp; Application for Retail Marketing and Analytics &nbsp;·&nbsp; LUCY Goods Inc. &nbsp;·&nbsp; May 2026 &nbsp;·&nbsp;
+      Essah &nbsp;·&nbsp; Retail Marketing and Analytics &nbsp;·&nbsp; LUCY Goods Inc. &nbsp;·&nbsp; 2026 &nbsp;·&nbsp;
       The U.S. nicotine pouch market is $5.4B and 96% of it is won on a shelf &nbsp;·&nbsp;
       Read velocity per reliable door, not per locator pin &nbsp;·&nbsp;
       Breakers has the clearest in-store explanation in the category &nbsp;·&nbsp;
@@ -1433,17 +1472,15 @@
       <div class="mark">L</div>
       <div>
         <strong>LUCY Retail Growth</strong>
-        <small>Essah's Application</small>
       </div>
     </div>
     <div class="nav-links">
-      <a href="#about">About</a>
       <a href="#dashboard">Dashboard</a>
       <a href="#tests">Test Lab</a>
       <a href="#playbook">First 6 Months</a>
       <a href="#market">Market Read</a>
+      <a href="#about">About</a>
     </div>
-    <a class="pill-button primary" href="mailto:maureenessah@gmail.com">Get in touch</a>
   </nav>
 
   <main class="shell">
@@ -1452,9 +1489,9 @@
     <section class="hero">
       <div class="hero-copy reveal">
         <div class="eyebrow"><span class="pulse-dot"></span> Retail growth operator view</div>
-        <h1>A working <span class="highlight">retail command center</span> built by <span class="highlight blue-chip">Maureen.</span></h1>
+        <h1>A working <span class="highlight">retail&nbsp;command</span><span class="highlight">center&nbsp;built by</span> <span class="highlight blue-chip">Essah.</span></h1>
         <p class="hero-text">
-          Which doors are actually selling. Which SKUs are bleeding stockouts. Where Breakers has a real trial story. What the field team should do differently next week. Built before day one to show how I think before I have access to your data.
+          Which doors are actually selling. Which SKUs are bleeding stockouts. Where Breakers has a real trial story. What the field team should do differently next week.
         </p>
         <div class="hero-actions">
           <a class="pill-button primary" href="#about">Who built this</a>
@@ -1474,43 +1511,16 @@
             <div class="product-float float-six"><img src="assets/lucy/hero-circle-pouch-espresso.webp" alt="LUCY Espresso pouches"></div>
             <div class="product-float float-seven"><img src="assets/lucy/hero-circle-pouch-cinnamon.webp" alt="LUCY Cinnamon pouches"></div>
             <div class="product-float float-eight"><img src="assets/lucy/hero-circle-pouch-mango.webp" alt="LUCY Mango pouches"></div>
+            <div class="product-float float-nine" style="width: 90px; height: 90px;"><img src="assets/lucy/hero-circle-breakers-berry.webp" alt="LUCY Berry Citrus Breakers"></div>
+            <div class="product-float float-ten" style="width: 110px; height: 110px;"><img src="assets/lucy/hero-circle-breakers-apple-ice.webp" alt="LUCY Apple Ice Breakers"></div>
+            <div class="product-float float-eleven" style="width: 80px; height: 80px;"><img src="assets/lucy/hero-circle-breakers-mango.webp" alt="LUCY Mango Breakers"></div>
+            <div class="product-float float-twelve" style="width: 100px; height: 100px;"><img src="assets/lucy/hero-circle-breakers-apple-cider.webp" alt="LUCY Apple Cider Breakers"></div>
+            <div class="product-float float-thirteen" style="width: 85px; height: 85px;"><img src="assets/lucy/hero-circle-pouch-wintergreen.webp" alt="LUCY Wintergreen pouches"></div>
+            <div class="product-float float-fourteen" style="width: 120px; height: 120px;"><img src="assets/lucy/hero-circle-pouch-espresso.webp" alt="LUCY Espresso pouches"></div>
+            <div class="product-float float-fifteen" style="width: 75px; height: 75px;"><img src="assets/lucy/hero-circle-pouch-cinnamon.webp" alt="LUCY Cinnamon pouches"></div>
+            <div class="product-float float-sixteen" style="width: 105px; height: 105px;"><img src="assets/lucy/hero-circle-pouch-mango.webp" alt="LUCY Mango pouches"></div>
           </div>
                   </div>
-      </div>
-    </section>
-
-    <!-- ── ABOUT ── -->
-    <section id="about">
-      <div class="section-head reveal">
-        <div>
-          <div class="eyebrow"><span class="pulse-dot"></span> The person building this</div>
-          <h2>Growth analytics. Consumer instinct. Ready to operate.</h2>
-        </div>
-      </div>
-
-      <div class="about-body reveal">
-        <div class="about-statement">
-          <div class="about-name-strip"><em>Operator</em> in progress.</div>
-          <p class="lead">Seven years building and measuring growth programmes across consumer, marketplace, and B2B. I know how to design a test, read it honestly, and act on the result. LUCY is where I want to own that loop end to end in one place.</p>
-        </div>
-        <div class="about-proof">
-          <div class="proof-item">
-            <b>6+ yrs</b>
-            <span>Growth and analytics consulting. Consumer, marketplace, B2B. Tests designed, dashboards shipped, results acted on.</span>
-          </div>
-          <div class="proof-item">
-            <b>Jumia</b>
-            <span>Seller acquisition at scale across West Africa's largest marketplace. Active listings up 35%.</span>
-          </div>
-          <div class="proof-item">
-            <b>Day one</b>
-            <span>Shadow a store visit before touching a spreadsheet. The shelf tells you what the data cannot.</span>
-          </div>
-          <div class="proof-item">
-            <b>Month six</b>
-            <span>One test scaled. One format that repeats without founder-level attention. One win the sales team owns.</span>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -1556,7 +1566,7 @@
         <label>
           Week view
           <select id="weekFilter">
-            <option value="w18">Week 18 — current read</option>
+            <option value="w18">Week 18 - current read</option>
             <option value="w17">Week 17</option>
             <option value="w16">Week 16</option>
           </select>
@@ -1648,7 +1658,7 @@
             <span class="tag">From public locator</span>
           </div>
           <div class="locator-model">
-            <div class="locator-map" aria-label="Locator cluster count model from public screenshot — not internal LUCY data">
+            <div class="locator-map" aria-label="Locator cluster count model from public screenshot - not internal LUCY data">
               <div class="cluster" style="--x: 10%; --y: 25%; --size: 62px;" data-label="PNW">261</div>
               <div class="cluster" style="--x: 20%; --y: 49%; --size: 48px;" data-label="CA/NV">119</div>
               <div class="cluster" style="--x: 31%; --y: 27%; --size: 70px;" data-label="MT/ID/WY">448</div>
@@ -1697,7 +1707,7 @@
               <div class="bar" style="--h: 49%; --c: var(--lucy-purple)" data-tip="W13: OOS drag begins, 3.9 ppd"></div>
               <div class="bar" style="--h: 66%; --c: var(--lucy-green)" data-tip="W14: endcap plus store briefing, 5.2 ppd"></div>
               <div class="bar" style="--h: 72%; --c: var(--lucy-green)" data-tip="W15: scaled in top-quartile doors, 5.7 ppd"></div>
-              <div class="bar" style="--h: 64%; --c: var(--lucy-yellow)" data-tip="W16: Mint 8mg stockout leak, 5.0 ppd — fix this before calling demand"></div>
+              <div class="bar" style="--h: 64%; --c: var(--lucy-yellow)" data-tip="W16: Mint 8mg stockout leak, 5.0 ppd - fix this before calling demand"></div>
               <div class="bar" style="--h: 78%; --c: var(--lucy-green)" data-tip="W17: replenishment fix lands, 6.1 ppd"></div>
               <div class="bar" style="--h: 83%; --c: var(--lucy-blue)" data-tip="W18: current read, 6.5 ppd"></div>
             </div>
@@ -1741,9 +1751,9 @@
             </div>
           </div>
           <div class="ladder">
-            <div class="step"><div class="num">W</div><div><b>Walmart Fuel Station — Pittsburg, KS</b><span>Check whether Breakers is visible on the adult nicotine path. Is the authorized SKU set physically on the shelf or just listed?</span></div></div>
-            <div class="step"><div class="num">O</div><div><b>OnCue — Bartlesville, OK</b><span>Check peak-hour stockouts and replenishment cadence. High-frequency c-store format with fast adult nicotine trip patterns.</span></div></div>
-            <div class="step"><div class="num">S</div><div><b>Strange Cloudz — Joplin, MO</b><span>Check how specialty-store shoppers talk about flavors, strength, and the Breakers capsule. Consumer language from the shelf is useful before you write test copy.</span></div></div>
+            <div class="step"><div class="num">W</div><div><b>Walmart Fuel Station - Pittsburg, KS</b><span>Check whether Breakers is visible on the adult nicotine path. Is the authorized SKU set physically on the shelf or just listed?</span></div></div>
+            <div class="step"><div class="num">O</div><div><b>OnCue - Bartlesville, OK</b><span>Check peak-hour stockouts and replenishment cadence. High-frequency c-store format with fast adult nicotine trip patterns.</span></div></div>
+            <div class="step"><div class="num">S</div><div><b>Strange Cloudz - Joplin, MO</b><span>Check how specialty-store shoppers talk about flavors, strength, and the Breakers capsule. Consumer language from the shelf is useful before you write test copy.</span></div></div>
           </div>
         </div>
       </div>
@@ -2102,7 +2112,7 @@
           <a href="https://lucy.co/">LUCY home</a>
           <a href="https://lucy.co/collections/all">LUCY product catalog</a>
           <a href="https://lucy.co/pages/store-locator">LUCY store locator</a>
-          <a href="https://www.grandviewresearch.com/industry-analysis/us-nicotine-pouches-market-report">Market size — Grand View Research</a>
+          <a href="https://www.grandviewresearch.com/industry-analysis/us-nicotine-pouches-market-report">Market size - Grand View Research</a>
           <a href="https://www.trustpilot.com/review/lucy.co">Trustpilot reviews</a>
           <a href="https://www.cdc.gov/tobacco/nicotine-pouches/index.html">CDC</a>
           <a href="https://www.fda.gov/tobacco-products/market-and-distribute-tobacco-product/nicotine-pouch-products-authorized-fda">FDA</a>
@@ -2112,7 +2122,6 @@
 
     <!-- ── WORD WALL CONNECTING LINES OVERLAY -->
     <div class="connecting-lines-overlay">
-      <div class="vertical-line"></div>
     </div>
 
     <!-- ── WORD WALL ── -->
@@ -2152,10 +2161,36 @@
       </div>
     </section>
 
+    <!-- ── ABOUT ── -->
+    <section id="about">
+      <div class="section-head reveal">
+        <div>
+          <div class="eyebrow"><span class="pulse-dot"></span> Building</div>
+          <h2>Growth analytics. Consumer instinct. Ready to operate. <em>Operator</em> in progress.</h2>
+        </div>
+      </div>
+
+      <div class="about-body reveal">
+        <div class="about-statement">
+          <p class="lead">Seven years building and measuring growth programmes across consumer, marketplace, and B2B.</p>
+        </div>
+        <div class="about-proof">
+          <div class="proof-item">
+            <b>6+ yrs</b>
+            <span>Growth and analytics consulting. Consumer, marketplace, B2B. Tests designed, dashboards shipped, results acted on.</span>
+          </div>
+          <div class="proof-item">
+            <b>Jumia</b>
+            <span>Seller acquisition at scale across West Africa's largest marketplace. Active listings up 35%.</span>
+          </div>
+                  </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <div>
         <span class="footer-name">Essah</span>
-        <span style="display:block; margin-top:5px;">Application for Retail Marketing and Analytics · LUCY Goods Inc. · May 2026</span>
+        <span style="display:block; margin-top:5px;">Retail Marketing and Analytics · LUCY Goods Inc. · 2026</span>
       </div>
       <a href="#about" class="scroll-to-top" style="text-decoration:none;" aria-label="Scroll to top">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -2226,7 +2261,7 @@
       decisionCopy.textContent  = selected.copy;
       const product = productFilter.options[productFilter.selectedIndex].text.replace(" focus", "").replace("Full portfolio", "Portfolio");
       const region  = regionFilter.options[regionFilter.selectedIndex].text;
-      const week    = weekFilter.options[weekFilter.selectedIndex].text.split(" — ")[0];
+      const week    = weekFilter.options[weekFilter.selectedIndex].text.split(" - ")[0];
       salesNarrative.textContent = `${selected.sales} ${product}, ${region}, ${week}.`;
       Object.entries(selected.metrics).forEach(([key, value]) => {
         kpiEls[key].dataset.base = value;
